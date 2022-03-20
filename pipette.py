@@ -63,3 +63,15 @@ def pipe(*iterators):
         return functools.reduce(lambda a, b: b(a), iterators, iterable)
     
     return ret
+
+
+def Pipe:
+    
+    def __init__(self):
+        self.stages = []
+    
+    def add(self, *stages):
+        self.stages += stages
+        
+    def __call__(self, iterable):
+        return pipe(*self.stages)(iterable)
