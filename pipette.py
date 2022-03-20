@@ -65,7 +65,7 @@ def pipe(*iterators):
     return ret
 
 
-def Pipe:
+class Pipe:
     
     def __init__(self):
         self.stages = []
