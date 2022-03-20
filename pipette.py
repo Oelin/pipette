@@ -1,9 +1,6 @@
 # pipette, a simple functional pipelining framework. 
 
 
-from functools import reduce
-
-
 def then(function):
     
     def ret(iterable):
@@ -60,6 +57,6 @@ def collect(function):
 def connect(*iterators):
     
     def ret(iterable):
-        return reduce(lambda a, b: b(a), iterators, iterable)
+        return functools.reduce(lambda a, b: b(a), iterators, iterable)
     
     return ret
