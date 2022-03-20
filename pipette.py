@@ -57,7 +57,7 @@ def collect(function):
     return ret
 
 
-def connect(*iterators):
+def pipe(*iterators):
     
     def ret(iterable):
         return functools.reduce(lambda a, b: b(a), iterators, iterable)
