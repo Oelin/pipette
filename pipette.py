@@ -4,7 +4,7 @@
 import functools
 
 
-def then(function):
+def map(function):
     
     def ret(iterable):
         
