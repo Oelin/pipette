@@ -70,7 +70,7 @@ class Pipe:
     def __init__(self):
         self.stages = []
     
-    def add(self, *stages):
+    def use(self, *stages):
         self.stages += stages
         
     def __call__(self, iterable):
