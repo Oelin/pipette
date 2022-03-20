@@ -1,4 +1,7 @@
-# pipette, a simple functional pipelining framework. 
+# pipette, a simple functional pipelining framework.
+
+
+import functools
 
 
 def then(function):
