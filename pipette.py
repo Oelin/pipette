@@ -1,4 +1,4 @@
-# pipery, a minimal functional pipelining framework. 
+# pipette, a simple functional pipelining framework. 
 
 
 from functools import reduce
